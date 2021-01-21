@@ -75,7 +75,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true # Fix the time but now it seems that it can be detected automatically,you can clean up.
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/root/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/recovery.fstab
 
 # inherit from the proprietary version
 -include vendor/smartisan/oscar/BoardConfigVendor.mk
