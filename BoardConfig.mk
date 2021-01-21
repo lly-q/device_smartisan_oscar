@@ -12,7 +12,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+#######################################################################
+# BoardConfig.mk is to define the properties of the compilation target, 
+# such as the kernel, the location of the device tree, and other flags.
+#######################################################################
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msm8953
 TARGET_NO_BOOTLOADER := true
@@ -34,7 +37,16 @@ TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 buildvariant=user
+# If you want to get BOARD_KERNEL_CMDLINE, you can retrieve the old device tree or in you phone in put cat /proc/cmdline
+BOARD_KERNEL_CMDLINE += console=ttyHSL0,115200,n8 
+BOARD_KERNEL_CMDLINE += androidboot.console=ttyHSL0 
+BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom 
+BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237 
+BOARD_KERNEL_CMDLINE += ehci-hcd.park=3 
+BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 
+BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci 
+BOARD_KERNEL_CMDLINE += earlycon=msm_hsl_uart,0x78af000 
+BOARD_KERNEL_CMDLINE += buildvariant=user
 BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
