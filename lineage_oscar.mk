@@ -15,3 +15,10 @@
 # Release name
 # author: gesangtome 
 PRODUCT_RELEASE_NAME := oscar
+
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := oscar
+PRODUCT_NAME := lineage_oscar
+PRODUCT_BRAND := smartisan
+PRODUCT_MODEL := oscar
+PRODUCT_MANUFACTURER := smartisan
