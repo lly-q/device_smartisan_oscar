@@ -22,6 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 
 $(call inherit-product-if-exists, vendor/smartisan/oscar/oscar-vendor.mk)
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \

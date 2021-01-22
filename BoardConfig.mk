@@ -35,6 +35,11 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 
 TARGET_USES_64_BIT_BINDER := true
 
+# configfs
+TARGET_FS_CONFIG_GEN := \
+    device/smartisan/oscar/config.fs
+
+
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 # If you want to get BOARD_KERNEL_CMDLINE, you can retrieve the old device tree or in you phone in put cat /proc/cmdline
