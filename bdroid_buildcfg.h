@@ -33,8 +33,6 @@ typedef struct {
 } device_t;
 
 static const device_t devices[] = {
-    {"dipper", "Xiaomi Mi 8"},
-    {"polaris", "Xiaomi Mi MIX 2S"},
     {"oscar", "Smartisan U3"},
 };
 
@@ -43,7 +41,7 @@ static inline const char* BtmGetDefaultName()
     char product_device[PROPERTY_VALUE_MAX];
     property_get("ro.product.device", product_device, "");
 
-    for (unsigned int i = 0; i < ARRAY_SIZE(devices); i++) {
+    for (unsigned int i = 0; i < ARRAY_SIZE(devices); i++) {        
         device_t device = devices[i];
 
         if (strcmp(device.product_device, product_device) == 0) {
