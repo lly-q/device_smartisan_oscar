@@ -14,7 +14,8 @@
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-	device/samrtisan/oscar/overlay
+	device/smartisan/oscar/overlay \
+	device/smartisan/oscar/overlay-lineage
 
 # Inherit from those products. Most specific first. Product API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
