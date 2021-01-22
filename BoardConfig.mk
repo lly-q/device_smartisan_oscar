@@ -58,6 +58,7 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/smartisan/msm8953
 TARGET_KERNEL_CONFIG := lineage_oscar_defconfig
+TARGET_KERNEL_CLANG_COMPILE := true
 
 # Partitions
 #BOOTIMAGE flags are in the boot, you can unpack it and fine them.
