@@ -13,9 +13,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "android_device_smartisan_os
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bluetooth", "bluetooth", "{5D3203B6-2347-425E-B824-3F21A9EA8C51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{42EEDB4F-4C7A-4C2F-98EC-2511F74ADB30}"
+	ProjectSection(SolutionItems) = preProject
+		bdroid_buildcfg.h = bdroid_buildcfg.h
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D3203B6-2347-425E-B824-3F21A9EA8C51} = {6A979224-CBBC-42C9-A7C3-9787AF3943A3}
+		{42EEDB4F-4C7A-4C2F-98EC-2511F74ADB30} = {5D3203B6-2347-425E-B824-3F21A9EA8C51}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F80C1E4-DDE1-410A-AF66-5FBC83DD1919}
