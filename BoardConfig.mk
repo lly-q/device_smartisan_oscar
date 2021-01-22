@@ -35,6 +35,12 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 
 TARGET_USES_64_BIT_BINDER := true
 
+# Bluetooth
+BOARD_HAVE_BLUETOOTH_QCOM := true
+TARGET_USE_QTI_BT_STACK := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := \
+    device/smartisan/oscar/bluetooth/include
+
 # configfs
 TARGET_FS_CONFIG_GEN := \
     device/smartisan/oscar/config.fs
