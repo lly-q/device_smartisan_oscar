@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "android_device_smartisan_os
 		lineage_oscar.mk = lineage_oscar.mk
 		oscar.mk = oscar.mk
 		README.md = README.md
+		vendorsetup.sh = vendorsetup.sh
 	EndProjectSection
 EndProject
 Global
