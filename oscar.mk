@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+	device/samrtisan/oscar/overlay
+
 # Inherit from those products. Most specific first. Product API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
