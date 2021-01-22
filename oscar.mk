@@ -22,6 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 
 $(call inherit-product-if-exists, vendor/smartisan/oscar/oscar-vendor.mk)
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
+
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
