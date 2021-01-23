@@ -45,6 +45,9 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := \
 TARGET_FS_CONFIG_GEN := \
     device/smartisan/oscar/config.fs
 
+# HIDL
+DEVICE_MANIFEST_FILE := \
+    device/nubia/nx627j/manifest.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
