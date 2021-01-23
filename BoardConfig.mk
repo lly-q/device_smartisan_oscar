@@ -71,6 +71,9 @@ TARGET_KERNEL_SOURCE := kernel/smartisan/msm8953
 TARGET_KERNEL_CONFIG := lineage_oscar_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
+
 # Partitions
 #BOOTIMAGE flags are in the boot, you can unpack it and fine them.
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
