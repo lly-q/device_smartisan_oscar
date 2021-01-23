@@ -49,6 +49,9 @@ TARGET_FS_CONFIG_GEN := \
 DEVICE_MANIFEST_FILE := \
     device/smartisan/oscar/manifest.xml
 
+DEVICE_MATRIX_FILE   := \
+    device/nubia/nx627j/compatibility_matrix.xml
+
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 # If you want to get BOARD_KERNEL_CMDLINE, you can retrieve the old device tree or in you phone in put cat /proc/cmdline
