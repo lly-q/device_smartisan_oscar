@@ -36,6 +36,12 @@ PRODUCT_COPY_FILES += \
     device/smartisan/oscar/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     device/smartisan/oscar/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml
 
+# Seccomp policy
+PRODUCT_COPY_FILES += \
+    device/smartisan/oscar/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy 
+
+
+
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
