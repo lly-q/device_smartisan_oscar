@@ -36,6 +36,10 @@ PRODUCT_COPY_FILES += \
     device/smartisan/oscar/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     device/smartisan/oscar/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml
 
+# TextClassifier
+PRODUCT_PACKAGES += \
+    textclassifier.bundle1
+
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
