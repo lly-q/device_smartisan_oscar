@@ -46,3 +46,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
 	vndk-sp
+
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm
