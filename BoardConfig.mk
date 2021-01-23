@@ -47,7 +47,7 @@ TARGET_FS_CONFIG_GEN := \
 
 # HIDL
 DEVICE_MANIFEST_FILE := \
-    device/nubia/nx627j/manifest.xml
+    device/smartisan/oscar/manifest.xml
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
